@@ -1,0 +1,53 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="UTF-8 "> 
+  <link rel="stylesheet" href="banco.css"> 
+  <title>Banco J&amp;J</title> 
+ </head> 
+ <body> 
+  
+    <form id="login"> 
+
+        <h1>BANCO J&amp;J</h1> 
+        <label>👤</label> 
+        <input type="number" name="cedula" id="usuario" placeholder="Cedula"> 
+        <br> <br>
+         
+        <label>🔑</label> 
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"> 
+            <br><br> 
+        <input type="checkbox" name="Recuerda" id="Recuerda mi usuario"> 
+        <label for="Recuerda mi usuario">Recuerda mi usuario</label> 
+        <br> <br> 
+        
+        <button id="iniciar-sesion">Iniciar Sesión</button> 
+        <br> <br> 
+        
+        <button>Registrarse</button> 
+        <br> 
+        <br> <a href="#">Política de privacidad</a> 
+        <br> <a href="#">Terminos y condicion</a> 
+    </form> 
+
+    <div id="mostrarcuenta" style="display: none;">
+        <table> 
+        <tr> 
+        <th>Saldo Actual</th> 
+        </tr> 
+        <tr> 
+        <td id="saldo"><p id="monto"></p></td> 
+        </tr> 
+
+        <tr> 
+        <td><input type="number" name="retiro" id="to-operate" placeholder="Monto"></td> 
+        </tr> 
+        <tr> 
+        <td><button id="depositar">Depositar</button> <button id="retirar">Retirar</button> </td>
+        </tr> 
+        </table> 
+    </div>
+
+  <script src="banco.js"></script>
+ </body>
+</html>
